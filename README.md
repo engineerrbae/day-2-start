@@ -12,7 +12,7 @@ TypeError: object of type 'int' has no len()'''
 
 #Because we are trying to know the int's (integer) length & len function isn't trained to do so.
 
-#Len function can tell you string's length. And now, question comes what is string & int? To under it better. Data Types comes into the picture:
+#Len function can tell you string's length. And now, question comes what is string & int? To understand it better. Data Types comes into the picture:
 
 #1. String
 #2. Integer
