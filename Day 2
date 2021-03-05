@@ -80,3 +80,61 @@ First: 3*3: 9 - Second: 3/3: 1
 
 Third: 9+1:10
 Fourth: 10-3: 7 is the answer.
+
+## Number manipulation & F-strings in python ##
+
+print(8/3) -> It will output floating point number.
+
+In order to print the int type of the result, we need to convert it to type int
+
+print(int(8/3)) -> It will output int type number
+
+Now, wondering if I wish to have round off result? Yes, it's possible in python using the round function.
+
+print(round(8/3)) -> It will output instead of printing 2.666666 will print out 3.
+
+Using this function, we can also go step further & decide the number of precision you want to round to. Suppose, If you want to round it to 4
+
+print(round(8/3,4)) -> It will output 2.6667
+
+Another way of getting the non-floating point number is using the floor division.
+
+print(8//3) -> It will chop off the after decimals & will print int type
+
+If you check it's type, will show the result is of type int.
+
+print(type(8//3)) -> class <int>
+
+Second way of writing mathematical calculations:
+
+result=4/2 -> output: 2
+result/=2 -> It will diivide the previous output with given 2. 2/2 & will store the result to the result.
+print(result) -> output: 1
+
+Another example:
+
+score = 0
+score += 1
+print(score) -> output: 1
+
+You can use this string manipulation with all the available operators in python.
+
+Another problem comes when we are printing the results of different type we get the tracebacks. So for this python has a solution to incorpate with different data types:
+
+score=0 -> int
+height=1.8 ->float
+is_Winning=True ->boolean
+
+print("your score is" + str(score) + str(height) + str(is_Winning ) -> In place of this we will be using a diiferent manipulation which is f-string
+
+print(f"your score is {score}") ->It does all the conversions in the backend. You don't have to worry about this
+
+print(f"your score is {score}, your height is {height}, your is_winning ia {is_winning}") -> handling conversions of multiple data types
+
+#Output: Your score is 0, your height is 1.8, your is_winning ia True
+
+It cut downs the manual labour of type conversions
+
+
+
+
